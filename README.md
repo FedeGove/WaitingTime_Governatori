@@ -32,3 +32,5 @@ Classe responsabile della gestione del file JSON, con metodi principali:
 #### a) Lettura tramite **BufferedReader**
 ```java
 public void leggi() { ... }
+
+#### b) Lettura tramite **Gson**
