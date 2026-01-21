@@ -1,9 +1,11 @@
 package com.example;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -17,7 +19,7 @@ public class GestoreFile extends Thread {
 
     @Override
     public void run() {
-        leggi();
+        
     }
 
     public void leggi() {
@@ -58,6 +60,17 @@ public class GestoreFile extends Thread {
         } catch (Exception e) {
             System.err.println("Errore lettura JSON: " + e.getMessage());
             return null;
+        }
+    }
+
+    public void scriviArrayListConGson(ArrayList<Canzone> canzoni) {
+    
+        try (FileWriter writer = new FileWriter(nomeFile)) {
+            Gson gson = new GsonBuilder().setPrettyPrinting().create();
+            gson.toJson(canzoni, writer); // Scrive l'ArrayList come JSON
+            System.out.println("File JSON aggiornato correttamente!");
+        } catch (IOException e) {
+            System.err.println("Errore scrittura JSON: " + e.getMessage());
         }
     }
 
