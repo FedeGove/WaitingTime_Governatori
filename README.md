@@ -40,3 +40,23 @@ public ArrayList<Canzone> leggiArrayListConGson() { ... }
 ```
 Legge il JSON e crea istanze di Canzone, restituendo una lista dinamica (ArrayList<Canzone>).
 
+#### c) Scrittura tramite **Gson**
+```java
+public void scriviArrayListConGson(ArrayList<Canzone> canzoni) { ... }
+```
+Aggiorna il file JSON con nuove canzoni, mantenendo il formato leggibile grazie a GsonBuilder().setPrettyPrinting().
+
+---
+
+### 3. `Main.java`
+Classe principale dell’applicazione. Funzionalità principali:
+
+Mostra un messaggio di benvenuto con il nome degli sviluppatori.
+
+Esegue un conto alla rovescia di 5 secondi prima dell’inizio dell’interazione, usando Thread.sleep().
+
+Visualizza le canzoni già presenti nel file JSON.
+
+Permette all’utente di inserire nuove canzoni da tastiera, aggiungendole a una lista dinamica.
+
+Alla fine, aggiorna il file JSON con le nuove istanze inserite dall’utente.
