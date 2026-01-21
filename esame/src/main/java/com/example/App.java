@@ -1,5 +1,7 @@
 package com.example;
 
+import java.util.ArrayList;
+
 /**
  * Hello world!
  */
@@ -20,5 +22,11 @@ public final class App {
         gestore.start();
 
         System.out.println("Thread avviato...");
+
+        ArrayList<Canzone> canzoni = gestore.leggiArrayListConGson();
+
+        for (Canzone c : canzoni) {
+            System.out.println(c);
+        }
     }
 }

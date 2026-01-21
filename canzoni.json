@@ -6,7 +6,7 @@
         "artist": "John Lennon",
         "album": "Imagine",
         "year": 1971,
-        "length": 183
+        "duration": 183
         },
         {
         "id": 2,
@@ -14,7 +14,7 @@
         "artist": "Queen",
         "album": "A Night at the Opera",
         "year": 1975,
-        "length": 354
+        "duration": 354
         },
         {
         "id": 3,
@@ -22,7 +22,7 @@
         "artist": "Eagles",
         "album": "Hotel California",
         "year": 1976,
-        "length": 257
+        "duration": 257
         },
         {
         "id": 4,
@@ -30,7 +30,7 @@
         "artist": "Michael Jackson",
         "album": "Thriller",
         "year": 1982,
-        "length": 293
+        "duration": 293
         },
         {
         "id": 5,
@@ -38,7 +38,7 @@
         "artist": "Bob Dylan",
         "album": "Highway 61 Revisited",
         "year": 1965,
-        "length": 369
+        "duration": 369
         }
     ]
 

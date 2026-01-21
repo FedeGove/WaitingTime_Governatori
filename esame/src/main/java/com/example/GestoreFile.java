@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
@@ -41,4 +42,23 @@ public class GestoreFile extends Thread {
             }
         }
     }
-}
+    
+    public ArrayList<Canzone> leggiArrayListConGson() {
+
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(nomeFile))) {
+
+            Gson gson = new Gson();
+
+            // Tipo specifico per ArrayList<Canzone>
+            Type tipoArrayList = new TypeToken<ArrayList<Canzone>>() {}.getType();
+
+            ArrayList<Canzone> canzoni = gson.fromJson(bufferedReader, tipoArrayList);
+
+            return canzoni;
+        } catch (Exception e) {
+            System.err.println("Errore lettura JSON: " + e.getMessage());
+            return null;
+        }
+    }
+
+}       
