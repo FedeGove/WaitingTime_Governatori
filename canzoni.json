@@ -1,0 +1,44 @@
+
+    [
+        {
+        "id": 1,
+        "title": "Imagine",
+        "artist": "John Lennon",
+        "album": "Imagine",
+        "year": 1971,
+        "length": 183
+        },
+        {
+        "id": 2,
+        "title": "Bohemian Rhapsody",
+        "artist": "Queen",
+        "album": "A Night at the Opera",
+        "year": 1975,
+        "length": 354
+        },
+        {
+        "id": 3,
+        "title": "Hotel California",
+        "artist": "Eagles",
+        "album": "Hotel California",
+        "year": 1976,
+        "length": 257
+        },
+        {
+        "id": 4,
+        "title": "Billie Jean",
+        "artist": "Michael Jackson",
+        "album": "Thriller",
+        "year": 1982,
+        "length": 293
+        },
+        {
+        "id": 5,
+        "title": "Like a Rolling Stone",
+        "artist": "Bob Dylan",
+        "album": "Highway 61 Revisited",
+        "year": 1965,
+        "length": 369
+        }
+    ]
+
